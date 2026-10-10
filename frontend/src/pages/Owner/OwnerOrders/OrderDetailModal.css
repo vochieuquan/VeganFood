@@ -1,0 +1,145 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.modal-box {
+  background: #ffffff;
+  padding: 28px 32px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.modal-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 12px;
+}
+
+.modal-box p {
+  margin: 10px 0;
+  color: #374151;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.modal-box p strong {
+  display: inline-block;
+  width: 130px;
+  color: #1f2937;
+}
+
+.close-btn {
+  margin-top: 24px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.close-btn:hover {
+  background: #1d4ed8;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ==== STATUS COLOR BADGES ==== */
+
+.status-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.status-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+/* ✅ Completed */
+.status-completed {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border-color: #a7f3d0;
+}
+.status-completed .status-icon-box {
+  background-color: #34d399;
+  color: white;
+}
+
+/* 🔄 In Progress */
+.status-progress {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+.status-progress .status-icon-box {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* ❌ Cancelled */
+.status-cancelled {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border-color: #fecaca;
+}
+.status-cancelled .status-icon-box {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* ⏳ Pending */
+.status-pending {
+  background-color: #fff7ed;
+  color: #b45309;
+  border-color: #fde68a;
+}
+.status-pending .status-icon-box {
+  background-color: #f59e0b;
+  color: white;
+}

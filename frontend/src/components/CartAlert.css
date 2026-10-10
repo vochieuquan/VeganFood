@@ -1,0 +1,27 @@
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.cart-alert {
+  box-shadow: 0 8px 25px rgba(252, 205, 42, 0.3) !important;
+  transition: all 0.3s ease;
+}
+
+.cart-alert:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(252, 205, 42, 0.4) !important;
+}
+
+@media (max-width: 768px) {
+  .cart-alert {
+    margin: 1rem !important;
+    min-width: 280px !important;
+  }
+} 

@@ -1,0 +1,326 @@
+/* ===== SIMILAR PRODUCTS - CLEAN & SIMPLE ===== */
+
+/* Section */
+.similar-products-section {
+  background: #FFFBE6;
+  padding: 3rem 0;
+}
+
+.similar-products-section .display-5 {
+  color: #2d3748;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.similar-products-section .fs-5 {
+  color: #718096;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Outer container for carousel and buttons */
+.products-carousel-outer-container {
+  position: relative;
+  overflow: hidden; /* Hide overflowing products */
+  padding: 0 40px; /* Space for buttons to overlap if needed */
+}
+
+/* Inner container for products grid to enable smooth scrolling */
+.products-carousel-inner {
+  overflow-x: hidden; /* Hide the scrollbar */
+  white-space: nowrap; /* Keep products on a single line */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+/* Ensure rows within the inner container stay on one line */
+.products-carousel-inner .row.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+/* Hide scrollbar for webkit browsers */
+.products-carousel-inner::-webkit-scrollbar {
+  display: none;
+}
+
+/* Navigation Buttons */
+.similar-products-section .carousel-nav-btn {
+  background: white !important;
+  border: 2px solid #e2e8f0 !important;
+  border-radius: 50% !important;
+  width: 55px !important;
+  height: 55px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute; /* Ensures positioning relative to the nearest positioned ancestor (Container) */
+  z-index: 10; /* Ensures buttons are above other content */
+}
+
+.similar-products-section .carousel-nav-btn.prev-btn {
+  left: -27.5px; /* Position half of button width outside the container for visual overlap */
+}
+
+.similar-products-section .carousel-nav-btn.next-btn {
+  right: -27.5px; /* Position half of button width outside the container for visual overlap */
+}
+
+.similar-products-section .carousel-nav-btn:hover {
+  border-color: #347928 !important;
+  box-shadow: 0 6px 20px rgba(52, 121, 40, 0.3) !important;
+}
+
+.similar-products-section .carousel-nav-btn svg {
+  color: #347928;
+  transition: color 0.3s ease;
+}
+
+.similar-products-section .carousel-nav-btn:hover svg {
+  color: white !important;
+}
+
+/* Ensure the container for products allows for button overlap */
+.similar-products-section .container.position-relative {
+  overflow: visible; /* Allow content (buttons) to extend beyond padding/border */
+}
+
+/* Hide buttons on small screens */
+@media (max-width: 576px) {
+  .similar-products-section .carousel-nav-btn {
+    display: none !important;
+  }
+}
+
+/* Product Cards */
+.product-card-hover {
+  background: white;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.product-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e0 !important;
+}
+
+/* Product Image */
+.product-image-container {
+  background: #f7fafc;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.product-card-hover:hover .product-image-container {
+  background: #edf2f7;
+}
+
+.product-image-container img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product-card-hover:hover .product-image-container img {
+  transform: scale(1.05);
+}
+
+/* Product Badges */
+.product-card-hover .bg-danger {
+  background: #e53e3e !important;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.product-card-hover .bg-success {
+  background: #48bb78 !important;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+/* Favorite Button */
+.product-card-hover .btn-light {
+  background: white !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 50% !important;
+  width: 36px !important;
+  height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s ease !important;
+}
+
+.product-card-hover .btn-light:hover {
+  background: #fed7d7 !important;
+  border-color: #e53e3e !important;
+}
+
+.product-card-hover .btn-light svg {
+  color: #a0aec0;
+  transition: color 0.3s ease;
+}
+
+.product-card-hover .btn-light:hover svg {
+  color: #e53e3e !important;
+}
+
+/* Product Info */
+.product-card-hover .card-title {
+  color: #2d3748;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.product-card-hover:hover .card-title {
+  color: #48bb78 !important;
+}
+
+/* Rating */
+.product-card-hover .text-warning {
+  color: #f6ad55 !important;
+  transition: color 0.2s ease;
+}
+
+/* Price */
+.product-card-hover .text-danger {
+  color: #e53e3e !important;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.product-card-hover .text-decoration-line-through {
+  color: #a0aec0 !important;
+  font-size: 0.875rem;
+}
+
+/* Description */
+.product-card-hover .text-muted {
+  color: #e2e8f0 !important;
+  transition: color 0.2s ease;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Add to Cart Button */
+.product-card-hover .btn-outline-success {
+  border: 2px solid #48bb78;
+  color: #48bb78;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.product-card-hover .btn-outline-success:hover {
+  background: #48bb78;
+  border-color: #48bb78;
+  color: white;
+}
+
+/* Pagination Dots */
+.similar-products-section .btn-success {
+  background: #48bb78 !important;
+  border: none;
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+  padding: 0 !important;
+}
+
+.similar-products-section .btn-outline-success {
+  background: #e2e8f0;
+  border: none;
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+  padding: 0 !important;
+}
+
+.similar-products-section .btn-outline-success:hover {
+  background: #48bb78;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .similar-products-section .carousel-nav-btn {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .similar-products-section {
+    padding: 2rem 0;
+  }
+
+  .similar-products-section .display-5 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .similar-products-section {
+    padding: 2rem 0;
+  }
+
+  .similar-products-section .display-5 {
+    font-size: 1.75rem;
+  }
+
+  .product-image-container {
+    height: 180px;
+  }
+}
+
+/* Half Star Rating */
+.half-star-container {
+  position: relative;
+  display: inline-block;
+}
+
+.half-star-container .star-background {
+  color: #e2e8f0;
+}
+
+.half-star-container .star-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #f6ad55;
+}
+
+/* Rating display improvements */
+.rating-display {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.rating-text {
+  font-size: 0.75rem;
+  color: #718096;
+  margin-left: 0.5rem;
+}

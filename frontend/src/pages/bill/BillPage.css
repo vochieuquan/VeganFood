@@ -1,0 +1,80 @@
+.bill-bg {
+  background: linear-gradient(135deg, #e8f5e9 0%, #fffde7 100%);
+  min-height: 100vh;
+  background-image: url('https://www.transparenttextures.com/patterns/leaf.png');
+  background-repeat: repeat;
+}
+
+.bill-card {
+  border-radius: 18px;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.bill-card:hover {
+  transform: translateY(-5px);
+}
+
+.bill-header {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.bill-title {
+  background: linear-gradient(90deg, #366300 0%, #236e00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bill-content {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.bill-footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bill-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bill-button:hover {
+  background-color: #45a049;
+}
+
+.bill-highlight {
+  background-color: #fff3e0;
+  padding: 10px;
+  border-left: 5px solid #fb8c00;
+  margin: 10px 0;
+}
+
+.bg-white {
+  background: #fff !important;
+}
+
+.rounded-4 {
+  border-radius: 1.5rem !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 24px 0 rgba(60, 72, 88, 0.07) !important;
+}

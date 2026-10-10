@@ -1,0 +1,17 @@
+# Local secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Downloaded upstream working copies
+/Vegetarian_Restaurant_Front-End/
+/Vegetarian_Restaurant_Back-End-main/
+
+# Build output and dependencies
+**/node_modules/
+**/build/
+**/target/
+**/coverage/
+**/.idea/
+**/.vscode/
+*.log

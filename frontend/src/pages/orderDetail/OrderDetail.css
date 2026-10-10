@@ -1,0 +1,636 @@
+/* Đảm bảo các style cơ bản được áp dụng đúng */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #FFFBE6;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+.order-detail-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background: #FFFBE6;
+}
+
+.order-detail-page .order-detail-bg {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.order-detail-page .order-detail-card {
+  border-radius: 20px;
+  background: #FFFBE6;
+  border: none;
+  box-shadow: 0 4px 24px rgba(52, 121, 40, 0.10);
+  max-width: 1300px;
+  width: 100%;
+  margin: 1.5rem auto;
+  padding: 2rem;
+}
+
+.order-detail-page .order-detail-title {
+  color: #347928;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 1rem 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #FCCD2A;
+  display: inline-block;
+  padding: 0 2rem 0.5rem;
+}
+
+.order-detail-page .order-info {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto 24px;
+  width: 100%;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.order-detail-page .order-info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-detail-page .order-info-table td {
+  padding: 10px 15px;
+  vertical-align: middle;
+}
+
+.order-detail-page .order-info-table .info-label {
+  color: #198754; /* Green color for labels */
+  font-weight: 500;
+  white-space: nowrap;
+  padding-right: 5px; /* Reduced from 15px */
+  width: auto;
+}
+
+.order-detail-page .order-info-table .info-value {
+  color: #495057;
+  padding-left: 5px; /* Added left padding instead of right */
+  width: auto;
+  font-weight: 400;
+  display: inline-block; /* Keep value on same line as label */
+}
+
+.order-detail-page .order-info-table tr:not(:last-child) {
+  border-bottom: 1px solid #e9ecef;
+}
+
+@media (max-width: 768px) {
+  .order-detail-page .order-info {
+    padding: 15px;
+  }
+  
+  .order-detail-page .order-info-table .info-label,
+  .order-detail-page .order-info-table .info-value {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+  }
+  
+  .order-detail-page .order-info-table td {
+    display: block;
+    width: 100%;
+    padding: 4px 0;
+  }
+  
+  .order-info-table tr:not(:last-child) {
+    border-bottom: none;
+  }
+  
+  .order-info-table tr {
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+
+.order-info-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+}
+
+.order-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-item {
+  display: flex;
+  gap: 10px;
+  line-height: 1.6;
+}
+
+.info-item strong {
+  color: #2c3e50;
+  font-weight: 600;
+  min-width: 140px;
+}
+
+.info-item span {
+  color: #7f8c8d;
+  flex: 1;
+}
+
+.order-info-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.order-info-col > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.order-info-col strong {
+  min-width: 120px;
+  color: #347928;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* All styles scoped under .order-detail-page */
+.order-detail-page .order-detail-bg {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFBE6;
+  min-height: calc(100vh - 80px);
+  padding-top: 80px;
+}
+
+.order-detail-page .order-detail-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+/* Header Styles */
+.order-detail-page .order-detail-header {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e9ecef;
+  position: relative;
+  min-height: 80px;
+}
+
+.order-detail-page .back-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  border: 1px solid #198754;
+  background: #198754;
+  color: white;
+  text-decoration: none;
+  height: 32px;
+}
+
+.order-detail-page .back-button:hover {
+  background: #FCCD2A;
+  border-color: #FCCD2A;
+  color: white;
+}
+
+.order-detail-page .order-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.order-detail-page .order-detail-title {
+  color: #2c3e50;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.order-detail-page .order-status-badge {
+  font-size: 0.9rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.order-detail-page .order-detail-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.order-total {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  padding: 20px;
+  margin: 24px 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+}
+
+.order-total h5 {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #f0f0f0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.total-breakdown > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: #495057;
+  font-size: 0.95rem;
+  align-items: center;
+  width: 100%;
+}
+
+.order-detail-page .total-breakdown .text-success {
+  color: #198754;
+  font-weight: 500;
+}
+
+/* Tăng độ ưu tiên cho text-success trong order-summary-total */
+.order-detail-page .total-breakdown .order-summary-total .text-success {
+  color: #198754;
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+.order-detail-page .total-breakdown .text-muted {
+  color: #6c757d;
+}
+
+.total-breakdown hr {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #e9ecef;
+}
+
+.total-breakdown .order-summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 0;
+  margin: 1rem 0 0;
+  border-top: 1px solid #e9ecef;
+  font-size: 1.1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.total-breakdown .order-summary-total h5,
+.total-breakdown .order-summary-total h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-weight: 700;
+  display: inline-block;
+  width: 50%;
+}
+
+.total-breakdown .order-summary-total h4 {
+  text-align: right;
+}
+
+.total-breakdown .order-summary-total .text-success {
+  color: #198754 !important;
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+/* Remove bottom border from last item before total */
+.total-breakdown > div:last-child:not(.order-summary-total) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.order-detail-page .order-items-table-wrapper {
+  max-height: 400px; /* Fixed height for header + 6 items */
+  border-radius: 12px;
+  border: 1px solid #e9efea;
+  background: #fff;
+  margin: 0 auto 24px;
+  max-width: 100%;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.order-detail-page .order-detail-container .order-items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  table-layout: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.order-detail-page .order-items-table thead {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  background: #347928;
+  color: #FFFBE6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.order-detail-page .order-detail-container .order-items-table thead tr th {
+  background-color: #347928;
+  background: #347928;
+  color: #FFFBE6;
+  border: none;
+  border-bottom: 2px solid #FFFBE6;
+}
+
+/* Override any Bootstrap styles for OrderDetail only */
+.order-detail-page .order-detail-container .order-items-table > :not(caption) > * > * {
+  background-color: inherit;
+}
+
+/* Đảm bảo các style cho bảng được áp dụng đúng */
+.order-detail-page .order-detail-container .order-items-table {
+  background-color: #fff;
+}
+
+.order-detail-page .order-detail-container .order-items-table thead tr th {
+  background-color: #347928;
+  color: #FFFBE6;
+}
+
+.order-detail-page .order-detail-container .order-items-table tbody {
+  display: block;
+  max-height: 340px; /* Height for 6 rows (56.67px per row) */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db #f1f5f9;
+}
+
+.order-detail-page .order-detail-container .order-items-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.order-items-table th,
+.order-items-table td {
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.order-detail-page .order-detail-container .order-items-table th {
+  font-weight: 600;
+  color: #FFFBE6;
+  border-bottom: 2px solid #FFFBE6;
+}
+
+.order-detail-page .order-detail-container .order-items-table td {
+  border-bottom: 1px solid #e9ecef;
+  background-color: #fff;
+  padding: 12px 8px;
+  vertical-align: middle;
+}
+
+/* Force table to respect column widths - OrderDetail specific */
+.order-detail-page .order-detail-container .order-items-table th:nth-child(1),
+.order-detail-page .order-detail-container .order-items-table td:nth-child(1) { width: 40%; }
+.order-detail-page .order-detail-container .order-items-table th:nth-child(2),
+.order-detail-page .order-detail-container .order-items-table td:nth-child(2) { width: 15%; text-align: center; }
+.order-detail-page .order-detail-container .order-items-table th:nth-child(3),
+.order-detail-page .order-detail-container .order-items-table td:nth-child(3) { width: 15%; text-align: center; }
+.order-detail-page .order-detail-container .order-items-table th:nth-child(4),
+.order-detail-page .order-detail-container .order-items-table td:nth-child(4) { width: 15%; text-align: center; }
+.order-detail-page .order-detail-container .order-items-table th:nth-child(5),
+.order-detail-page .order-detail-container .order-items-table td:nth-child(5) { width: 15%; text-align: center; }
+
+/* Style for table cells */
+.order-detail-page .order-detail-container .order-items-table th:nth-child(1),
+.order-detail-page .order-detail-container .order-items-table td:nth-child(1) { 
+  width: 40%; 
+  text-align: left; 
+  padding-left: 20px; 
+}
+
+.order-detail-page .order-detail-container .order-items-table th:nth-child(n+2),
+.order-detail-page .order-detail-container .order-items-table td:nth-child(n+2) { 
+  width: 15%; 
+  text-align: center;
+}
+
+.order-items-table td {
+  background: #fff;
+  color: #343a40;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 500;
+}
+
+.order-detail-page .order-detail-container .order-items-table tbody tr:hover td {
+  background: #C0EBA6;
+}
+
+.order-detail-page .order-detail-container .order-items-table .product-image-container {
+  width: 50px;
+  height: 50px;
+}
+
+.order-detail-page .order-detail-container .order-items-table .product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-detail-page .order-detail-container .order-items-table td button {
+  border-radius: 12px;
+  border: 2px solid #FCCD2A;
+  color: #347928;
+  background: #FFFBE6;
+  font-weight: 600;
+  padding: 6px 16px;
+}
+
+.order-detail-page .order-detail-container .order-items-table td button:hover {
+  background: #FCCD2A;
+  border-color: #347928;
+  color: #347928;
+}
+
+.order-total {
+  font-size: 1.2rem;
+  color: #347928;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.total-breakdown {
+  display: inline-block;
+  min-width: 300px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #343a40;
+}
+
+.total-row span:first-child {
+  padding-right: 1rem;
+}
+
+.total-divider {
+  margin: 8px 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.final-total {
+  font-size: 1.3rem;
+}
+
+.final-total strong {
+  font-weight: 800;
+}
+
+.order-detail-page .btn-outline-success {
+  border-radius: 12px;
+  border: 2px solid #FCCD2A;
+  color: #347928;
+  background: #FFFBE6;
+  font-weight: 600;
+  padding: 8px 20px;
+}
+
+.order-detail-page .btn-outline-success:hover {
+  background: #FCCD2A;
+  border-color: #347928;
+  color: #347928;
+}
+
+/* Status Badge Colors for Order Detail */
+.order-detail-page .status-badge {
+  font-weight: 600 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.order-detail-page .status-badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Pending Status - Orange/Yellow */
+.order-detail-page .status-badge.status-pending {
+  background: linear-gradient(135deg, #ff9800, #ffb74d) !important;
+  color: #fff !important;
+  border: 2px solid #ff8f00;
+}
+
+/* Paid Status - Blue */
+.order-detail-page .status-badge.status-paid {
+  background: linear-gradient(135deg, #2196f3, #64b5f6) !important;
+  color: #fff !important;
+  border: 2px solid #1976d2;
+}
+
+/* Shipping Status - Purple */
+.order-detail-page .status-badge.status-shipping {
+  background: linear-gradient(135deg, #9c27b0, #ba68c8) !important;
+  color: #fff !important;
+  border: 2px solid #7b1fa2;
+}
+
+/* Delivered Status - Green */
+.order-detail-page .status-badge.status-delivered {
+  background: linear-gradient(135deg, #4caf50, #81c784) !important;
+  color: #fff !important;
+  border: 2px solid #388e3c;
+}
+
+/* Completed Status - Dark Green */
+.order-detail-page .status-badge.status-completed {
+  background: linear-gradient(135deg, #347928, #5a9a47) !important;
+  color: #fff !important;
+  border: 2px solid #2d6a23;
+}
+
+/* Cancelled Status - Red */
+.order-detail-page .status-badge.status-cancelled {
+  background: linear-gradient(135deg, #f44336, #e57373) !important;
+  color: #fff !important;
+  border: 2px solid #d32f2f;
+}
+
+/* Unknown/Default Status - Gray */
+.order-detail-page .status-badge.status-unknown,
+.order-detail-page .status-badge.status-default {
+  background: linear-gradient(135deg, #9e9e9e, #bdbdbd) !important;
+  color: #fff !important;
+  border: 2px solid #757575;
+}
+
+/* Responsive adjustments for status badges in order detail */
+@media (max-width: 768px) {
+  .order-detail-page .status-badge {
+    padding: 0.4rem 1rem !important;
+    fontSize: 0.9rem !important;
+    minWidth: 100px !important;
+  }
+}

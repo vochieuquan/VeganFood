@@ -1,0 +1,288 @@
+.cart-page {
+  padding: 40px 20px;
+  background-color: #FFFBE6;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add margin-top for Carousel in CartPage */
+.cart-page .hero-banner {
+  margin-top: 105px;
+}
+
+.cart-container {
+  flex: 1;
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.cart-container h1 {
+  color: #1A3C34;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.cart-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.cart-items {
+  background: white;
+  border-radius: 12px;
+  padding: 0 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-height: 800px; /* Fixed height to enable scrolling */
+  overflow-y: hidden; /* Hide scrollbar by default */
+}
+
+/* Show scrollbar when there are more than 8 items */
+.cart-items.scrollable {
+  overflow-y: auto;
+  padding-right: 12px; /* Add some padding to prevent content from being hidden behind scrollbar */
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+.cart-items.scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cart-items.scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.cart-items.scrollable::-webkit-scrollbar-thumb {
+  background: #4CAF50;
+  border-radius: 3px;
+}
+
+/* Custom scrollbar for Firefox */
+.cart-items.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: #4CAF50 #f1f1f1;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.item-details h3 {
+  color: #1A3C34;
+  margin-bottom: 8px;
+}
+
+.price {
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 20px;
+}
+
+.quantity-controls button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #4CAF50;
+  border-radius: 4px;
+  background: white;
+  color: #4CAF50;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.quantity-controls span {
+  min-width: 30px;
+  text-align: center;
+}
+
+.item-total {
+  font-weight: 600;
+  color: #1A3C34;
+  margin: 0 20px;
+}
+
+.remove-btn {
+  border: none;
+  background: none;
+  color: #ff4444;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.cart-summary {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h2 {
+  color: #1A3C34;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  color: #666;
+}
+
+.summary-row.total {
+  color: #1A3C34;
+  font-weight: 600;
+  font-size: 18px;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 16px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s;
+}
+
+.checkout-btn:hover {
+  background: #388E3C;
+}
+
+.continue-shopping {
+  width: 100%;
+  padding: 16px;
+  background: white;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: all 0.2s;
+}
+
+.continue-shopping:hover {
+  background: #f0f8f0;
+}
+
+
+/* Reset default margin và padding */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cart-page {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Điều chỉnh logo size */
+.logo img {
+  height: 40px;
+  padding: 0;
+}
+
+/* Điều chỉnh nav menu spacing */
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: #1A3C34;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+  color: #4CAF50;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header-actions button,
+.header-actions a {
+  background: none;
+  border: none;
+  color: #1A3C34;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.2s;
+}
+
+.header-actions button:hover,
+.header-actions a:hover {
+  color: #4CAF50;
+}
+
+/* Make sure footer stays at bottom */
+footer {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .cart-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .cart-item {
+    flex-wrap: wrap;
+  }
+  
+  .item-details {
+    width: calc(100% - 100px);
+  }
+  
+  .quantity-controls {
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,76 @@
+.navigation-wrapper {
+  background-color: #347928;
+  position: sticky;
+  top: 100px;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+.category-navbar {
+  padding: 0.75rem 0;
+}
+
+/* Increased specificity to override Bootstrap defaults */
+.category-navbar .navbar-nav .category-nav-item {
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 25px;
+  margin: 0 0.25rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.category-navbar .navbar-nav .category-nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fccd2a;
+  transform: translateY(-1px);
+}
+
+.category-navbar .navbar-nav .category-nav-item.active {
+  background-color: #fccd2a;
+  color: #347928;
+  font-weight: 700;
+}
+
+.category-navbar .navbar-nav .category-nav-item.active:hover {
+  background-color: #fccd2a;
+  color: #347928;
+}
+
+@media (max-width: 991px) {
+  .navigation-wrapper {
+    position: static;
+    top: auto;
+  }
+
+  .category-navbar .navbar-nav {
+    text-align: center;
+  }
+
+  .category-navbar .navbar-nav .category-nav-item {
+    margin: 0.25rem;
+    display: block;
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-wrapper {
+    top: 120px;
+  }
+
+  .category-navbar .navbar-nav .category-nav-item {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .category-navbar .navbar-nav .category-nav-item {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,57 @@
+[
+    {
+      "user_id": 1,
+      "name": "Nguyen Van A",
+      "email": "nguyenvana@example.com",
+      "password": "$2b$10$abcdEFGhijkLmnopQRStuvwxYz0123456789abcdEFGH",
+      "role": "user",
+      "phone_number": "0912345678",
+      "created_at": "2025-06-15T10:00:00",
+      "google_id": null,
+      "address": "123 Đường ABC, Quận 1, TP.HCM"
+    },
+    {
+      "user_id": 2,
+      "name": "Tran Thi B",
+      "email": "tranthib@example.com",
+      "password": "$2b$10$ZYXwvutsrqpoNMLKJIHGfedcba9876543210ZYXWVUT",
+      "role": "admin",
+      "phone_number": "0987654321",
+      "created_at": "2025-06-14T15:30:00",
+      "google_id": "google-oauth2|1234567890",
+      "address": "456 Đường XYZ, Quận 3, TP.HCM"
+    },
+    {
+      "user_id": 3,
+      "name": "Le Van C",
+      "email": "levanc@example.com",
+      "password": "$2b$10$AbCdEfGhIjKlMnOpQrStUvWxYz1234567890AbCdEfG",
+      "role": "user",
+      "phone_number": "0901122334",
+      "created_at": "2025-06-13T08:45:00",
+      "google_id": null,
+      "address": "789 Đường DEF, Quận 5, TP.HCM"
+    },
+    {
+      "user_id": 4,
+      "name": "Pham Thi D",
+      "email": "phamthid@example.com",
+      "password": "$2b$10$MNBVCXZLKJHGFDSAPOIUYTREWQ0987654321MNBVCXZ",
+      "role": "manager",
+      "phone_number": "0933445566",
+      "created_at": "2025-06-12T12:00:00",
+      "google_id": "google-oauth2|1122334455",
+      "address": "101 Đường GHI, Quận 7, TP.HCM"
+    },
+    {
+      "user_id": 5,
+      "name": "Hoang Van E",
+      "email": "hoangvane@example.com",
+      "password": "$2b$10$QWERTYUIOPLKJHGFDSAZXCVBNM1234567890QWERTYU",
+      "role": "user",
+      "phone_number": "0977554433",
+      "created_at": "2025-06-11T18:20:00",
+      "google_id": null,
+      "address": "202 Đường JKL, Quận Bình Thạnh, TP.HCM"
+    }
+  ]

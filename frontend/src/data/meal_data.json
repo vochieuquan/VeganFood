@@ -1,0 +1,644 @@
+{
+  "products": [
+    {
+      "product_id": 1,
+      "name": "Cơm chiên rau củ",
+      "description": "Món chay: cơm chiên rau củ thuộc danh mục gạo & ngũ cốc",
+      "price": 20000,
+      "stock_quantity": 83,
+      "image_url": "https://cdn.tgdd.vn/2021/05/CookProduct/COM-RANG-CHAY---Cach-lam-COM-RANG-RAU-CU-Thanh-Dam---Mon-An-Ngon-Moi-Ngay-0-19-screenshot-1200x676.jpg",
+      "category": "Rice & Grains",
+      "total_order": 248
+    },
+    {
+      "product_id": 2,
+      "name": "Cơm gạo lứt đậu hũ",
+      "description": "Món chay: cơm gạo lứt đậu hũ thuộc danh mục gạo & ngũ cốc",
+      "price": 70000,
+      "stock_quantity": 86,
+      "image_url": "https://cdn.tgdd.vn/2021/05/CookProduct/COM-RANG-CHAY---Cach-lam-COM-RANG-RAU-CU-Thanh-Dam---Mon-An-Ngon-Moi-Ngay-0-19-screenshot-1200x676.jpg",
+      "category": "Rice & Grains",
+      "total_order": 198
+    },
+    {
+      "product_id": 3,
+      "name": "Cơm cuộn rong biển chay",
+      "description": "Món chay: cơm cuộn rong biển chay thuộc danh mục gạo & ngũ cốc",
+      "price": 50000,
+      "stock_quantity": 57,
+      "image_url": "https://example.com/images/3.jpg",
+      "category": "Rice & Grains",
+      "total_order": 476
+    },
+    {
+      "product_id": 4,
+      "name": "Cháo yến mạch bí đỏ",
+      "description": "Món chay: cháo yến mạch bí đỏ thuộc danh mục gạo & ngũ cốc",
+      "price": 30000,
+      "stock_quantity": 29,
+      "image_url": "https://example.com/images/4.jpg",
+      "category": "Rice & Grains",
+      "total_order": 171
+    },
+    {
+      "product_id": 5,
+      "name": "Cháo đậu xanh gạo lứt",
+      "description": "Món chay: cháo đậu xanh gạo lứt thuộc danh mục gạo & ngũ cốc",
+      "price": 80000,
+      "stock_quantity": 71,
+      "image_url": "https://example.com/images/5.jpg",
+      "category": "Rice & Grains",
+      "total_order": 131
+    },
+    {
+      "product_id": 6,
+      "name": "Bánh mì kẹp rau củ",
+      "description": "Món chay: bánh mì kẹp rau củ thuộc danh mục gạo & ngũ cốc",
+      "price": 60000,
+      "stock_quantity": 44,
+      "image_url": "https://example.com/images/6.jpg",
+      "category": "Rice & Grains",
+      "total_order": 265
+    },
+    {
+      "product_id": 7,
+      "name": "Bánh mì đậu hũ nướng",
+      "description": "Món chay: bánh mì đậu hũ nướng thuộc danh mục gạo & ngũ cốc",
+      "price": 90000,
+      "stock_quantity": 25,
+      "image_url": "https://example.com/images/7.jpg",
+      "category": "Rice & Grains",
+      "total_order": 73
+    },
+    {
+      "product_id": 8,
+      "name": "Cơm nắm muối mè",
+      "description": "Món chay: cơm nắm muối mè thuộc danh mục gạo & ngũ cốc",
+      "price": 80000,
+      "stock_quantity": 56,
+      "image_url": "https://example.com/images/8.jpg",
+      "category": "Rice & Grains",
+      "total_order": 336
+    },
+    {
+      "product_id": 9,
+      "name": "Rau củ luộc chấm chao",
+      "description": "Món chay: rau củ luộc chấm chao thuộc danh mục rau củ",
+      "price": 90000,
+      "stock_quantity": 56,
+      "image_url": "https://bizweb.dktcdn.net/thumb/grande/100/502/234/products/5e399b29b3f806a65fe9.jpg?v=1747885509900",
+      "category": "Vegetables",
+      "total_order": 26
+    },
+    {
+      "product_id": 10,
+      "name": "Bông cải xanh xào dầu hào chay",
+      "description": "Món chay: bông cải xanh xào dầu hào chay thuộc danh mục rau củ",
+      "price": 90000,
+      "stock_quantity": 18,
+      "image_url": "https://example.com/images/10.jpg",
+      "category": "Vegetables",
+      "total_order": 458
+    },
+    {
+      "product_id": 11,
+      "name": "Canh rau củ ngọt",
+      "description": "Món chay: canh rau củ ngọt thuộc danh mục rau củ",
+      "price": 20000,
+      "stock_quantity": 51,
+      "image_url": "https://example.com/images/11.jpg",
+      "category": "Vegetables",
+      "total_order": 315
+    },
+    {
+      "product_id": 12,
+      "name": "Salad rau trộn sốt mè",
+      "description": "Món chay: salad rau trộn sốt mè thuộc danh mục rau củ",
+      "price": 30000,
+      "stock_quantity": 99,
+      "image_url": "https://example.com/images/12.jpg",
+      "category": "Vegetables",
+      "total_order": 290
+    },
+    {
+      "product_id": 13,
+      "name": "Cà tím nướng mỡ hành chay",
+      "description": "Món chay: cà tím nướng mỡ hành chay thuộc danh mục rau củ",
+      "price": 40000,
+      "stock_quantity": 33,
+      "image_url": "https://example.com/images/13.jpg",
+      "category": "Vegetables",
+      "total_order": 216
+    },
+    {
+      "product_id": 14,
+      "name": "Khoai tây nghiền với sữa hạt",
+      "description": "Món chay: khoai tây nghiền với sữa hạt thuộc danh mục rau củ",
+      "price": 90000,
+      "stock_quantity": 22,
+      "image_url": "https://example.com/images/14.jpg",
+      "category": "Vegetables",
+      "total_order": 181
+    },
+    {
+      "product_id": 15,
+      "name": "Cà rốt xào nấm",
+      "description": "Món chay: cà rốt xào nấm thuộc danh mục rau củ",
+      "price": 50000,
+      "stock_quantity": 38,
+      "image_url": "https://example.com/images/15.jpg",
+      "category": "Vegetables",
+      "total_order": 481
+    },
+    {
+      "product_id": 16,
+      "name": "Nộm đu đủ chay",
+      "description": "Món chay: nộm đu đủ chay thuộc danh mục rau củ",
+      "price": 40000,
+      "stock_quantity": 27,
+      "image_url": "https://example.com/images/16.jpg",
+      "category": "Vegetables",
+      "total_order": 351
+    },
+    {
+      "product_id": 17,
+      "name": "Nấm rơm kho tiêu",
+      "description": "Món chay: nấm rơm kho tiêu thuộc danh mục nấm",
+      "price": 60000,
+      "stock_quantity": 96,
+      "image_url": "https://example.com/images/17.jpg",
+      "category": "Mushrooms",
+      "total_order": 32
+    },
+    {
+      "product_id": 18,
+      "name": "Nấm đùi gà nướng lá chanh",
+      "description": "Món chay: nấm đùi gà nướng lá chanh thuộc danh mục nấm",
+      "price": 60000,
+      "stock_quantity": 26,
+      "image_url": "https://example.com/images/18.jpg",
+      "category": "Mushrooms",
+      "total_order": 180
+    },
+    {
+      "product_id": 19,
+      "name": "Nấm xào rau củ",
+      "description": "Món chay: nấm xào rau củ thuộc danh mục nấm",
+      "price": 90000,
+      "stock_quantity": 48,
+      "image_url": "https://example.com/images/19.jpg",
+      "category": "Mushrooms",
+      "total_order": 425
+    },
+    {
+      "product_id": 20,
+      "name": "Soup nấm hạt sen",
+      "description": "Món chay: soup nấm hạt sen thuộc danh mục nấm",
+      "price": 80000,
+      "stock_quantity": 99,
+      "image_url": "https://example.com/images/20.jpg",
+      "category": "Mushrooms",
+      "total_order": 68
+    },
+    {
+      "product_id": 21,
+      "name": "Lẩu nấm chay",
+      "description": "Món chay: lẩu nấm chay thuộc danh mục nấm",
+      "price": 90000,
+      "stock_quantity": 18,
+      "image_url": "https://example.com/images/21.jpg",
+      "category": "Mushrooms",
+      "total_order": 1
+    },
+    {
+      "product_id": 22,
+      "name": "Nấm chiên giòn",
+      "description": "Món chay: nấm chiên giòn thuộc danh mục nấm",
+      "price": 80000,
+      "stock_quantity": 29,
+      "image_url": "https://example.com/images/22.jpg",
+      "category": "Mushrooms",
+      "total_order": 83
+    },
+    {
+      "product_id": 23,
+      "name": "Nấm xào sa tế",
+      "description": "Món chay: nấm xào sa tế thuộc danh mục nấm",
+      "price": 90000,
+      "stock_quantity": 95,
+      "image_url": "https://example.com/images/23.jpg",
+      "category": "Mushrooms",
+      "total_order": 157
+    },
+    {
+      "product_id": 24,
+      "name": "Nấm nhồi đậu hũ sốt cà",
+      "description": "Món chay: nấm nhồi đậu hũ sốt cà thuộc danh mục nấm",
+      "price": 70000,
+      "stock_quantity": 56,
+      "image_url": "https://example.com/images/24.jpg",
+      "category": "Mushrooms",
+      "total_order": 150
+    },
+    {
+      "product_id": 25,
+      "name": "Đậu hũ chiên sả ớt",
+      "description": "Món chay: đậu hũ chiên sả ớt thuộc danh mục đậu & đậu hũ",
+      "price": 30000,
+      "stock_quantity": 71,
+      "image_url": "https://example.com/images/25.jpg",
+      "category": "Beans & Tofu",
+      "total_order": 99
+    },
+    {
+      "product_id": 26,
+      "name": "Đậu hũ sốt cà chua",
+      "description": "Món chay: đậu hũ sốt cà chua thuộc danh mục đậu & đậu hũ",
+      "price": 62.22,
+      "stock_quantity": 49,
+      "image_url": "https://example.com/images/26.jpg",
+      "category": "Beans & Tofu",
+      "total_order": 348
+    },
+    {
+      "product_id": 27,
+      "name": "Tàu hũ ky cuộn nấm",
+      "description": "Món chay: tàu hũ ky cuộn nấm thuộc danh mục đậu & đậu hũ",
+      "price": 92.53,
+      "stock_quantity": 93,
+      "image_url": "https://example.com/images/27.jpg",
+      "category": "Beans & Tofu",
+      "total_order": 251
+    },
+    {
+      "product_id": 28,
+      "name": "Đậu hũ kho tương",
+      "description": "Món chay: đậu hũ kho tương thuộc danh mục đậu & đậu hũ",
+      "price": 67.87,
+      "stock_quantity": 34,
+      "image_url": "https://example.com/images/28.jpg",
+      "category": "Beans & Tofu",
+      "total_order": 141
+    },
+    {
+      "product_id": 29,
+      "name": "Chả đậu hũ nướng lá lốt",
+      "description": "Món chay: chả đậu hũ nướng lá lốt thuộc danh mục đậu & đậu hũ",
+      "price": 52.15,
+      "stock_quantity": 89,
+      "image_url": "https://example.com/images/29.jpg",
+      "category": "Beans & Tofu",
+      "total_order": 246
+    },
+    {
+      "product_id": 30,
+      "name": "Đậu hũ hấp gừng hành",
+      "description": "Món chay: đậu hũ hấp gừng hành thuộc danh mục đậu & đậu hũ",
+      "price": 87.12,
+      "stock_quantity": 58,
+      "image_url": "https://example.com/images/30.jpg",
+      "category": "Beans & Tofu",
+      "total_order": 380
+    },
+    {
+      "product_id": 31,
+      "name": "Đậu hũ non sốt nấm",
+      "description": "Món chay: đậu hũ non sốt nấm thuộc danh mục đậu & đậu hũ",
+      "price": 92.05,
+      "stock_quantity": 28,
+      "image_url": "https://example.com/images/31.jpg",
+      "category": "Beans & Tofu",
+      "total_order": 92
+    },
+    {
+      "product_id": 32,
+      "name": "Sữa đậu nành nguyên chất",
+      "description": "Món chay: sữa đậu nành nguyên chất thuộc danh mục đậu & đậu hũ",
+      "price": 22.93,
+      "stock_quantity": 36,
+      "image_url": "https://example.com/images/32.jpg",
+      "category": "Beans & Tofu",
+      "total_order": 356
+    },
+    {
+      "product_id": 33,
+      "name": "Chả hạt sen hấp",
+      "description": "Món chay: chả hạt sen hấp thuộc danh mục hạt & củ",
+      "price": 69.67,
+      "stock_quantity": 66,
+      "image_url": "https://example.com/images/33.jpg",
+      "category": "Nuts & Roots",
+      "total_order": 138
+    },
+    {
+      "product_id": 34,
+      "name": "Súp hạt sen bí đỏ",
+      "description": "Món chay: súp hạt sen bí đỏ thuộc danh mục hạt & củ",
+      "price": 99.2,
+      "stock_quantity": 68,
+      "image_url": "https://example.com/images/34.jpg",
+      "category": "Nuts & Roots",
+      "total_order": 12
+    },
+    {
+      "product_id": 35,
+      "name": "Salad bơ hạt điều",
+      "description": "Món chay: salad bơ hạt điều thuộc danh mục hạt & củ",
+      "price": 92.92,
+      "stock_quantity": 33,
+      "image_url": "https://example.com/images/35.jpg",
+      "category": "Nuts & Roots",
+      "total_order": 330
+    },
+    {
+      "product_id": 36,
+      "name": "Bánh yến mạch hạt óc chó",
+      "description": "Món chay: bánh yến mạch hạt óc chó thuộc danh mục hạt & củ",
+      "price": 31.82,
+      "stock_quantity": 29,
+      "image_url": "https://example.com/images/36.jpg",
+      "category": "Nuts & Roots",
+      "total_order": 102
+    },
+    {
+      "product_id": 37,
+      "name": "Hạt chia ngâm sữa hạt",
+      "description": "Món chay: hạt chia ngâm sữa hạt thuộc danh mục hạt & củ",
+      "price": 66.13,
+      "stock_quantity": 32,
+      "image_url": "https://example.com/images/37.jpg",
+      "category": "Nuts & Roots",
+      "total_order": 314
+    },
+    {
+      "product_id": 38,
+      "name": "Khoai lang nướng mật",
+      "description": "Món chay: khoai lang nướng mật thuộc danh mục hạt & củ",
+      "price": 24.79,
+      "stock_quantity": 26,
+      "image_url": "https://example.com/images/38.jpg",
+      "category": "Nuts & Roots",
+      "total_order": 135
+    },
+    {
+      "product_id": 39,
+      "name": "Củ sen hầm nấm",
+      "description": "Món chay: củ sen hầm nấm thuộc danh mục hạt & củ",
+      "price": 45.16,
+      "stock_quantity": 58,
+      "image_url": "https://example.com/images/39.jpg",
+      "category": "Nuts & Roots",
+      "total_order": 217
+    },
+    {
+      "product_id": 40,
+      "name": "Bơ nghiền với hạt lanh",
+      "description": "Món chay: bơ nghiền với hạt lanh thuộc danh mục hạt & củ",
+      "price": 36.02,
+      "stock_quantity": 97,
+      "image_url": "https://example.com/images/40.jpg",
+      "category": "Nuts & Roots",
+      "total_order": 280
+    },
+    {
+      "product_id": 41,
+      "name": "Bún riêu chay",
+      "description": "Món chay: bún riêu chay thuộc danh mục mì & bún",
+      "price": 40.33,
+      "stock_quantity": 18,
+      "image_url": "https://example.com/images/41.jpg",
+      "category": "Noodles",
+      "total_order": 175
+    },
+    {
+      "product_id": 42,
+      "name": "Bún Huế chay",
+      "description": "Món chay: bún huế chay thuộc danh mục mì & bún",
+      "price": 42.22,
+      "stock_quantity": 36,
+      "image_url": "https://example.com/images/42.jpg",
+      "category": "Noodles",
+      "total_order": 34
+    },
+    {
+      "product_id": 43,
+      "name": "Hủ tiếu chay",
+      "description": "Món chay: hủ tiếu chay thuộc danh mục mì & bún",
+      "price": 50.52,
+      "stock_quantity": 19,
+      "image_url": "https://example.com/images/43.jpg",
+      "category": "Noodles",
+      "total_order": 125
+    },
+    {
+      "product_id": 44,
+      "name": "Mì xào rau củ",
+      "description": "Món chay: mì xào rau củ thuộc danh mục mì & bún",
+      "price": 31.51,
+      "stock_quantity": 32,
+      "image_url": "https://example.com/images/44.jpg",
+      "category": "Noodles",
+      "total_order": 271
+    },
+    {
+      "product_id": 45,
+      "name": "Mì tương đen chay",
+      "description": "Món chay: mì tương đen chay thuộc danh mục mì & bún",
+      "price": 42.49,
+      "stock_quantity": 49,
+      "image_url": "https://example.com/images/45.jpg",
+      "category": "Noodles",
+      "total_order": 447
+    },
+    {
+      "product_id": 46,
+      "name": "Bún trộn đậu hũ",
+      "description": "Món chay: bún trộn đậu hũ thuộc danh mục mì & bún",
+      "price": 56.99,
+      "stock_quantity": 91,
+      "image_url": "https://example.com/images/46.jpg",
+      "category": "Noodles",
+      "total_order": 234
+    },
+    {
+      "product_id": 47,
+      "name": "Mì lạnh Hàn chay",
+      "description": "Món chay: mì lạnh hàn chay thuộc danh mục mì & bún",
+      "price": 22.68,
+      "stock_quantity": 23,
+      "image_url": "https://example.com/images/47.jpg",
+      "category": "Noodles",
+      "total_order": 311
+    },
+    {
+      "product_id": 48,
+      "name": "Miến xào nấm",
+      "description": "Món chay: miến xào nấm thuộc danh mục mì & bún",
+      "price": 27.88,
+      "stock_quantity": 82,
+      "image_url": "https://example.com/images/48.jpg",
+      "category": "Noodles",
+      "total_order": 456
+    },
+    {
+      "product_id": 49,
+      "name": "Sườn non chay ram mặn",
+      "description": "Món chay: sườn non chay ram mặn thuộc danh mục món giả mặn",
+      "price": 73.89,
+      "stock_quantity": 42,
+      "image_url": "https://example.com/images/49.jpg",
+      "category": "Vegan Meat Alternatives",
+      "total_order": 416
+    },
+    {
+      "product_id": 50,
+      "name": "Thịt quay chay từ mì căn",
+      "description": "Món chay: thịt quay chay từ mì căn thuộc danh mục món giả mặn",
+      "price": 24.94,
+      "stock_quantity": 92,
+      "image_url": "https://example.com/images/50.jpg",
+      "category": "Vegan Meat Alternatives",
+      "total_order": 124
+    },
+    {
+      "product_id": 51,
+      "name": "Cá chay chiên giòn",
+      "description": "Món chay: cá chay chiên giòn thuộc danh mục món giả mặn",
+      "price": 55.26,
+      "stock_quantity": 71,
+      "image_url": "https://example.com/images/51.jpg",
+      "category": "Vegan Meat Alternatives",
+      "total_order": 295
+    },
+    {
+      "product_id": 52,
+      "name": "Gà chay xé lá chanh",
+      "description": "Món chay: gà chay xé lá chanh thuộc danh mục món giả mặn",
+      "price": 73.47,
+      "stock_quantity": 92,
+      "image_url": "https://example.com/images/52.jpg",
+      "category": "Vegan Meat Alternatives",
+      "total_order": 293
+    },
+    {
+      "product_id": 53,
+      "name": "Mít non kho tiêu",
+      "description": "Món chay: mít non kho tiêu thuộc danh mục món giả mặn",
+      "price": 51.65,
+      "stock_quantity": 95,
+      "image_url": "https://example.com/images/53.jpg",
+      "category": "Vegan Meat Alternatives",
+      "total_order": 69
+    },
+    {
+      "product_id": 54,
+      "name": "Bò lá lốt chay",
+      "description": "Món chay: bò lá lốt chay thuộc danh mục món giả mặn",
+      "price": 47.83,
+      "stock_quantity": 67,
+      "image_url": "https://example.com/images/54.jpg",
+      "category": "Vegan Meat Alternatives",
+      "total_order": 260
+    },
+    {
+      "product_id": 55,
+      "name": "Nem rán chay",
+      "description": "Món chay: nem rán chay thuộc danh mục món giả mặn",
+      "price": 37.4,
+      "stock_quantity": 95,
+      "image_url": "https://example.com/images/55.jpg",
+      "category": "Vegan Meat Alternatives",
+      "total_order": 345
+    },
+    {
+      "product_id": 56,
+      "name": "Chả lụa chay",
+      "description": "Món chay: chả lụa chay thuộc danh mục món giả mặn",
+      "price": 74.34,
+      "stock_quantity": 96,
+      "image_url": "https://example.com/images/56.jpg",
+      "category": "Vegan Meat Alternatives",
+      "total_order": 453
+    },
+    {
+      "product_id": 57,
+      "name": "Chè đậu xanh nước cốt dừa",
+      "description": "Món chay: chè đậu xanh nước cốt dừa thuộc danh mục tráng miệng",
+      "price": 66.55,
+      "stock_quantity": 95,
+      "image_url": "https://example.com/images/57.jpg",
+      "category": "Desserts",
+      "total_order": 276
+    },
+    {
+      "product_id": 58,
+      "name": "Bánh chuối nướng chay",
+      "description": "Món chay: bánh chuối nướng chay thuộc danh mục tráng miệng",
+      "price": 76.05,
+      "stock_quantity": 60,
+      "image_url": "https://example.com/images/58.jpg",
+      "category": "Desserts",
+      "total_order": 79
+    },
+    {
+      "product_id": 59,
+      "name": "Thạch rau câu trái cây",
+      "description": "Món chay: thạch rau câu trái cây thuộc danh mục tráng miệng",
+      "price": 34.2,
+      "stock_quantity": 10,
+      "image_url": "https://example.com/images/59.jpg",
+      "category": "Desserts",
+      "total_order": 13
+    },
+    {
+      "product_id": 60,
+      "name": "Bánh flan chay",
+      "description": "Món chay: bánh flan chay thuộc danh mục tráng miệng",
+      "price": 53.48,
+      "stock_quantity": 68,
+      "image_url": "https://example.com/images/60.jpg",
+      "category": "Desserts",
+      "total_order": 138
+    },
+    {
+      "product_id": 61,
+      "name": "Kem chuối dừa",
+      "description": "Món chay: kem chuối dừa thuộc danh mục tráng miệng",
+      "price": 20.74,
+      "stock_quantity": 20,
+      "image_url": "https://example.com/images/61.jpg",
+      "category": "Desserts",
+      "total_order": 286
+    },
+    {
+      "product_id": 62,
+      "name": "Sữa hạt óc chó",
+      "description": "Món chay: sữa hạt óc chó thuộc danh mục tráng miệng",
+      "price": 71.19,
+      "stock_quantity": 98,
+      "image_url": "https://example.com/images/62.jpg",
+      "category": "Desserts",
+      "total_order": 32
+    },
+    {
+      "product_id": 63,
+      "name": "Pudding xoài hạt chia",
+      "description": "Món chay: pudding xoài hạt chia thuộc danh mục tráng miệng",
+      "price": 62.75,
+      "stock_quantity": 14,
+      "image_url": "https://example.com/images/63.jpg",
+      "category": "Desserts",
+      "total_order": 151
+    },
+    {
+      "product_id": 64,
+      "name": "Chè bắp chay",
+      "description": "Món chay: chè bắp chay thuộc danh mục tráng miệng",
+      "price": 25.37,
+      "stock_quantity": 14,
+      "image_url": "https://example.com/images/64.jpg",
+      "category": "Desserts",
+      "total_order": 470
+    }
+  ]
+}

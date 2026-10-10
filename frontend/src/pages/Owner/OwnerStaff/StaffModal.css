@@ -1,0 +1,205 @@
+/* Modal Backdrop */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Modal Box */
+.modal-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  animation: zoomIn 0.3s ease;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #333;
+  margin: auto;
+  position: relative;
+}
+
+/* Modal Header */
+.modal-box h2 {
+  font-size: clamp(1.25rem, 5vw, 1.5rem);
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1f2937;
+}
+
+/* Form Elements */
+.modal-box .form-group {
+  margin-bottom: 16px;
+}
+
+.modal-box label {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.modal-box input,
+.modal-box select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 0.9375rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.modal-box input:focus,
+.modal-box select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Modal Actions */
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.modal-actions button {
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  font-family: inherit;
+}
+
+.modal-actions .btn-modal-close {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.modal-actions .btn-modal-close:hover {
+  background-color: #d1d5db;
+}
+
+.modal-actions .btn-modal-save {
+  background-color: #2563eb;
+  color: white;
+}
+
+.modal-actions .btn-modal-save:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .modal-box {
+    width: 95%;
+    padding: 16px;
+  }
+  
+  .modal-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .modal-actions button {
+    width: 100%;
+    padding: 12px;
+  }
+  
+  .modal-box h2 {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+  }
+  
+  .modal-box input,
+  .modal-box select,
+  .modal-box textarea {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+}
+
+/* Animation */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Center aligned modal actions */
+.modal-actions.center {
+  justify-content: center;
+}
+
+/* Common button styles */
+.btn-save,
+.btn-cancel {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+/* Save button */
+.btn-save {
+  background-color: #10b981;
+}
+
+.btn-save:hover {
+  background-color: #059669;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.4);
+}
+
+/* Cancel button */
+.btn-cancel {
+  background-color: #ef4444;
+}
+.btn-cancel:hover {
+  background-color: #dc2626;
+  box-shadow: 0 0 6px rgba(239, 68, 68, 0.4);
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "orders": [
+    {
+      "order_id": 1,
+      "customer_id": 1,
+      "user_id": 1,
+      "status": "pending",
+      "payment_method": "VNPAY",
+      "total_amount": 250000.00,
+      "phone_number": "0905123456",
+      "order_date": "2025-07-09 15:55:54",
+      "address": "123 Le Loi, Da Nang",
+      "payment_id": 1,
+      "discount_id": null
+    },
+    {
+      "order_id": 2,
+      "customer_id": 1,
+      "user_id": 1,
+      "status": "shipped",
+      "payment_method": "Cash",
+      "total_amount": 150000.00,
+      "phone_number": "0905123456",
+      "order_date": "2025-07-09 15:55:54",
+      "address": "123 Le Loi, Da Nang",
+      "payment_id": 2,
+      "discount_id": null
+    },
+    {
+      "order_id": 3,
+      "customer_id": 1,
+      "user_id": 1,
+      "status": "delivered",
+      "payment_method": "VNPAY",
+      "total_amount": 320000.00,
+      "phone_number": "0905123456",
+      "order_date": "2025-07-09 15:55:54",
+      "address": "123 Le Loi, Da Nang",
+      "payment_id": null,
+      "discount_id": null
+    },
+    {
+      "order_id": 4,
+      "customer_id": 1,
+      "user_id": 1,
+      "status": "cancelled",
+      "payment_method": "Cash",
+      "total_amount": 50000.00,
+      "phone_number": "0905123456",
+      "order_date": "2025-07-09 15:55:54",
+      "address": "123 Le Loi, Da Nang",
+      "payment_id": 3,
+      "discount_id": null
+    },
+    {
+      "order_id": 5,
+      "customer_id": 1,
+      "user_id": 1,
+      "status": "pending",
+      "payment_method": "VNPAY",
+      "total_amount": 430000.00,
+      "phone_number": "0905123456",
+      "order_date": "2025-07-09 15:55:54",
+      "address": "123 Le Loi, Da Nang",
+      "payment_id": null,
+      "discount_id": null
+    },
+    {
+      "order_id": 6,
+      "customer_id": 1,
+      "user_id": 1,
+      "status": "delivered",
+      "payment_method": "Cash",
+      "total_amount": 70000.00,
+      "phone_number": "0905123456",
+      "order_date": "2025-07-09 15:55:54",
+      "address": "123 Le Loi, Da Nang",
+      "payment_id": 4,
+      "discount_id": null
+    },
+    {
+      "order_id": 7,
+      "customer_id": 1,
+      "user_id": 1,
+      "status": "shipped",
+      "payment_method": "VNPAY",
+      "total_amount": 210000.00,
+      "phone_number": "0905123456",
+      "order_date": "2025-07-09 15:55:54",
+      "address": "123 Le Loi, Da Nang",
+      "payment_id": 5,
+      "discount_id": null
+    },
+    {
+      "order_id": 8,
+      "customer_id": 1,
+      "user_id": 1,
+      "status": "pending",
+      "payment_method": "Cash",
+      "total_amount": 120000.00,
+      "phone_number": "0905123456",
+      "order_date": "2025-07-09 15:55:54",
+      "address": "123 Le Loi, Da Nang",
+      "payment_id": null,
+      "discount_id": null
+    }
+  ]
+}
